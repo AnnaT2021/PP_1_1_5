@@ -23,7 +23,12 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="7cfbe7cf-0515-447d-bde1-7408d44244cf" object-ref="schemas/my_data_base/tables/user" />
+    </open-files>
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="7cfbe7cf-0515-447d-bde1-7408d44244cf" dataset="my_data_base.user" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
