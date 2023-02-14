@@ -6,7 +6,9 @@ import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
 import jm.task.core.jdbc.util.Util;
+import org.hibernate.Session;
 
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -24,8 +26,8 @@ public class Main {
         userList.forEach(x ->{userService.saveUser(x.getName(), x.getLastName(), x.getAge());
             System.out.format("User с именем - %s добавлен в базу данных%n", x.getName() );});
         userService.getAllUsers().forEach(x -> System.out.println(x));
-        userService.removeUserById(1);
-        userService.cleanUsersTable();
-        userService.dropUsersTable();
+       userService.removeUserById(1);
+       userService.cleanUsersTable();
+       userService.dropUsersTable();
     }
 }
